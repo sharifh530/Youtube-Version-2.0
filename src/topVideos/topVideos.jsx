@@ -2,9 +2,9 @@ import React from "react";
 
 import VideoCard from "../videoCard/VideoCard";
 
-import "./RecomendedVideos.css";
+import "./topVideos.css";
 
-function RecomendedVideos() {
+function TopVideos() {
   return (
     <div className="recomendedVideos">
       <h2>Top Youtube Videos</h2>
@@ -104,4 +104,4 @@ function RecomendedVideos() {
   );
 }
 
-export default RecomendedVideos;
+export default TopVideos;

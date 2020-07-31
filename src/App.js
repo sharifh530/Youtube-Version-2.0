@@ -4,8 +4,7 @@ import "./App.css";
 
 import Header from "./header/Header";
 import Sidebar from "./sidebar/Sidebar";
-import RecomendedVideos from "./recomendedVedios/RecomendedVideos.jsx";
-import SearchPage from "./searchPage/SearchPage";
+import TopVideos from "./topVideos/topVideos.jsx";
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
       <Header />
       <div className="app__page">
         <Sidebar />
-        <RecomendedVideos />
+        <TopVideos />
       </div>
       {/* recomended video */}
     </div>

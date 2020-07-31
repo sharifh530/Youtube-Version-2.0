@@ -5,9 +5,6 @@ import VideoCallIcon from "@material-ui/icons/VideoCall";
 import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
-import { Link } from "react-router-dom";
-
-import youtube from "../youtube.js";
 
 import "./Header.css";
 
@@ -19,30 +16,30 @@ function Header() {
     setInput(e.target.value);
   };
 
-  useEffect(async (input) => {
-    const response = await youtube.get("search", {
-      params: {
-        part: "snippet",
-        maxResults: 20,
-        key: "AIzaSyAVfo_yJ8LY0Xj7uOWV16YRzxdQzeYxAqs",
-        q: input,
-      },
-    });
-    setYoutubeData(response.data.items);
-  }, []);
+  // useEffect(async (input) => {
+  //   const response = await youtube.get("search", {
+  //     params: {
+  //       part: "snippet",
+  //       maxResults: 20,
+  //       key: "AIzaSyAVfo_yJ8LY0Xj7uOWV16YRzxdQzeYxAqs",
+  //       q: input,
+  //     },
+  //   });
+  //   setYoutubeData(response.data.items);
+  // }, []);
 
-  const handleClick = async (input) => {
-    const response = await youtube.get("search", {
-      params: {
-        part: "snippet",
-        maxResults: 20,
-        key: "AIzaSyAVfo_yJ8LY0Xj7uOWV16YRzxdQzeYxAqs",
-        q: input,
-      },
-    });
-    setYoutubeData(response.data.items);
-    console.log(youtubeData);
-  };
+  // const handleClick = async (input) => {
+  //   const response = await youtube.get("search", {
+  //     params: {
+  //       part: "snippet",
+  //       maxResults: 20,
+  //       key: "AIzaSyAVfo_yJ8LY0Xj7uOWV16YRzxdQzeYxAqs",
+  //       q: input,
+  //     },
+  //   });
+  //   setYoutubeData(response.data.items);
+  //   console.log(youtubeData);
+  // };
 
   return (
     <div className="header">
@@ -63,7 +60,7 @@ function Header() {
           placeholder="Search"
           type="text"
         />
-        <SearchIcon onClick={handleClick} className="header__inputButton" />
+        <SearchIcon className="header__inputButton" />
       </div>
 
       <div className="header_icons">
