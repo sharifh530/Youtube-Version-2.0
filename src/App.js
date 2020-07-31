@@ -2,18 +2,15 @@ import React from "react";
 
 import "./App.css";
 
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import RecomendedVideos from "./RecomendedVideos.jsx";
+import Header from "./header/Header";
+import Sidebar from "./sidebar/Sidebar";
+import RecomendedVideos from "./recomendedVedios/RecomendedVideos.jsx";
+import SearchPage from "./searchPage/SearchPage";
 
 function App() {
   return (
     <div className="app">
-      {/* header */}
-
       <Header />
-
-      {/* sidebar */}
       <div className="app__page">
         <Sidebar />
         <RecomendedVideos />

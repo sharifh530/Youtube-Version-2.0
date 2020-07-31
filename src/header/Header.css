@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px;
   /* for attach header to the top */
   position: sticky;
   top: 0;
@@ -11,7 +11,7 @@
 }
 
 .header_logo {
-  height: 30px;
+  height: 25px;
   object-fit: contain;
   margin-left: 20px;
 }
@@ -26,6 +26,7 @@
 .header_input > input {
   flex: 1;
   border: none;
+  height: 30px;
 }
 
 .header__inputButton {
@@ -33,6 +34,7 @@
   background-color: #fafafa;
   border-left: 1px solid lightgray;
   color: gray;
+  cursor: pointer;
 }
 
 .header_icons {
@@ -42,4 +44,9 @@
 
 .header__icon {
   margin-right: 8px;
+}
+
+.avatar {
+  height: 25px !important;
+  width: 25px !important;
 }
