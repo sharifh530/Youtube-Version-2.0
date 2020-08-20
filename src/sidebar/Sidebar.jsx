@@ -15,15 +15,48 @@ import "./Sidebar.css";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <SidebarRow selected Icon={HomeIcon} title="Home" />
-      <SidebarRow Icon={WhatshotIcon} title="Trending" />
-      <SidebarRow Icon={SubscriptionsIcon} title="Subscription" />
+      <SidebarRow
+        selected
+        Icon={HomeIcon}
+        title="Home"
+        refer="https://www.youtube.com/"
+      />
+      <SidebarRow
+        Icon={WhatshotIcon}
+        title="Trending"
+        refer="https://www.youtube.com/feed/trending"
+      />
+      <SidebarRow
+        Icon={SubscriptionsIcon}
+        title="Subscription"
+        refer="https://www.youtube.com/feed/subscriptions"
+      />
       <hr />
-      <SidebarRow Icon={VideoLibraryIcon} title="Video library" />
-      <SidebarRow Icon={HistoryIcon} title="History" />
-      <SidebarRow Icon={OndemandVideoIcon} title="Ondemand video" />
-      <SidebarRow Icon={WatchLaterIcon} title="Watch later" />
-      <SidebarRow Icon={ThumbUpAltIcon} title="Liked videos" />
+      <SidebarRow
+        Icon={VideoLibraryIcon}
+        title="Video library"
+        refer="https://www.youtube.com/feed/library"
+      />
+      <SidebarRow
+        Icon={HistoryIcon}
+        title="History"
+        refer="https://www.youtube.com/feed/history"
+      />
+      <SidebarRow
+        Icon={OndemandVideoIcon}
+        title="Ondemand video"
+        refer="https://www.youtube.com/feed/trending"
+      />
+      <SidebarRow
+        Icon={WatchLaterIcon}
+        title="Watch later"
+        refer="https://www.youtube.com/playlist?list=WL"
+      />
+      <SidebarRow
+        Icon={ThumbUpAltIcon}
+        title="Liked videos"
+        refer="https://www.youtube.com/playlist?list=LLrtVjdCoEE03LqZqbNC0Qkw"
+      />
       <SidebarRow Icon={ExpandMoreIcon} title="Show more" />
     </div>
   );
